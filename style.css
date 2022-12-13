@@ -1,0 +1,170 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(0, 44, 44);
+    color: white;
+    overflow: hidden;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoesMenu button {
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    padding: 10px;
+
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+}
+
+.botoesMenu button:disabled {
+    color: white;
+    background-color: teal;
+    border: 1px solid white;
+}
+
+.relogio {
+    margin-top: 140px;
+    font-size: 3em;
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    padding: 50px 100px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+.desp_form {
+    margin-top: 30px;
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+.desp_form label {
+    display: inline;
+}
+
+.desp_relogio {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.msg {
+    padding: 30px;
+    font-size: 1em;
+    text-align: center;
+    background-color: black;
+}
+
+.Alarme {
+    position: absolute;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px solid white;
+    top: -500px;
+    transition: 1s;
+}
+
+.Alarme span {
+    grid-column: 4;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-right: -50px;
+    font-size: 1.4em;
+}
+
+.Alarme h1 {
+    grid-column: 2;
+}
+
+
+
+
+.cronometro {
+
+    margin-top: 40px;
+}
+
+.cronometro_display {
+    padding: 80px;
+    background-color: black;
+}
+
+.cronometro_display h1 {
+    font-size: 5em;
+}
+
+.cronometro_form {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cronometro_form button {
+    padding: 10px 20px;
+}
+
+
+
+.temporizador {
+    margin-top: 20px;
+    width: 500px;
+}
+
+.botoes_temp {
+    text-align: center;
+    background-color: black;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+}
+
+.botoes_temp button {
+    padding: 10px 20px;
+}
+
+.form_temp {
+    text-align: center;
+    background-color: black;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.relogio_temp {
+    font-size: 4em;
+    text-align: center;
+    padding: 70px;
+    background-color: black;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    top: 0;
+    transition: 1s;
+}
+

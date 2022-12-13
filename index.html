@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 TimeHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="botoesMenu">
+            <button id="relogio" disabled>RELOGIO</button>
+            <button id="despertador">DESPERTADOR</button>
+            <button id="cronometro">CRONOMETRO</button>
+            <button id="temporizador">TEMPORIZADOR</button>
+        </div>
+
+        <div class="Alarme">
+            <span class="Alarme_fechar">X</span>
+            <h1>Tempo Esgotado!</h1>
+        </div>
+
+        <div id="display">
+            <div class="temporizador">
+                
+
+                <div class="form_temp">
+                    <label for="temp_horas">Horas
+                        <input type="number" name="" id="temp_horas" placeholder="00"  max="60" min="0">
+                        </label>
+
+                        <label for="temp_minutos">Minutos
+                            <input type="number" id="temp_minutos" placeholder="00" max="60" min="0">
+                        </label>
+
+                        <label for="temp_segundos">Segundos
+                            <input type="number" id="temp_segundos" placeholder="00" max="60" min="0">
+
+                        </label>
+                </div>
+
+                <div class="botoes_temp">
+                    <button id="temp_iniciar">Iniciar</button>
+                    <button id="temp_pausar">Pausar</button>
+                    <button id="temp_zerar">Zerar</button>
+                    
+                </div>
+
+                <div class="relogio_temp hide">
+                    00 : 00 : 00
+                </div>
+
+                
+            </div>
+
+
+            <div class="cronometro">
+                <div class="cronometro_display">
+                    <h1>00 : 00 : 00 </h1>
+                </div>
+                <div class="cronometro_form">
+                    <button id="cronometro_iniciar">Iniciar</button>
+                    <button id="cronometro_pausar">Pausar</button>
+                    <button id="cronometro_zerar">Zerar</button>
+                </div>
+
+            </div>
+
+
+            <div class="despertador">
+                <div class="desp_form">
+                    <label for="desp_horas">
+                        HORAS
+                        <input type="number" max="24" min="0" id="desp_horas" placeholder="00">
+                    </label>
+
+                    <label for="desp_minutos">MINUTOS
+                        <input type="number" max="60" min="0" placeholder="00" id="desp_minutos">
+
+                    </label>
+                    <button class="desp_adicionar">Adicionar Alarme</button>
+                    <button class="desp_desativar">Desativar Alarme</button>
+                </div>
+                <div class="desp_relogio">
+                    <h1>00 : 00 : 00</h1>
+                </div>
+                <div class="desp_msg_alarme">
+
+                </div>
+
+            </div>
+
+            <div class="relogio">
+                <h1>00 : 00 : 00</h1>
+            </div>
+
+
+        </div>
+    </main>
+
+    <audio id="audio">
+        <source src="toque.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
